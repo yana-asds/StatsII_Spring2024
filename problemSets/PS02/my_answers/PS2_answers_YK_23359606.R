@@ -75,6 +75,6 @@ plot(climateSupport$countries, climateSupport$choice,
      xlab = "Number of Countries", 
      ylab = "Choice", 
      main = "Plot of Choice by Number of Countries",
-     pch = 19) # pch = 19 makes the points solid circles; adjust as needed.
+     pch = 19) 
 abline(climateSupport_logit, col = "red")
 abline(climateSupport_logit_interact, col = "green")
