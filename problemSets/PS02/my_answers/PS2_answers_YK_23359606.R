@@ -69,12 +69,3 @@ stargazer::stargazer(climateSupport_logit, climateSupport_logit_interact, title 
 
 # Comparing interactive model with additive model using anova test
 anova(climateSupport_logit, climateSupport_logit_interact, test = "LRT")
-
-# plotting  
-plot(climateSupport$countries, climateSupport$choice, 
-     xlab = "Number of Countries", 
-     ylab = "Choice", 
-     main = "Plot of Choice by Number of Countries",
-     pch = 19) 
-abline(climateSupport_logit, col = "red")
-abline(climateSupport_logit_interact, col = "green")
